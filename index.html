@@ -85,7 +85,9 @@ section{padding:6rem 4rem}
 .plan-card:hover{border-color:var(--green);transform:translateY(-2px)}
 .plan-card.featured{border-color:var(--green);background:linear-gradient(135deg,rgba(26,122,74,0.15),var(--card-bg))}
 .plan-badge{position:absolute;top:-1px;left:50%;transform:translateX(-50%);background:var(--green);color:white;padding:0.3rem 1rem;border-radius:0 0 6px 6px;font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;white-space:nowrap}
-.plan-icon{font-size:2.5rem;margin-bottom:0.8rem;line-height:1}
+.plan-icon{width:100%;height:120px;margin-bottom:0.8rem;overflow:hidden;border-radius:6px;background:var(--dark)}
+.plan-icon img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.3s}
+.plan-card:hover .plan-icon img{transform:scale(1.04)}
 .plan-name{font-family:'Barlow Condensed',sans-serif;font-size:1.3rem;font-weight:700;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem}
 .plan-price{display:flex;align-items:baseline;gap:0.2rem;margin-bottom:0.3rem}
 .price-currency{font-size:1rem;font-weight:500;color:var(--muted);margin-top:0.3rem}
@@ -300,7 +302,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 4r
   <div class="plans-grid">
 
     <div class="plan-card">
-      <div class="plan-icon">🏍️</div>
+      <div class="plan-icon"><img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=400&h=240&fit=crop&auto=format" alt="Moto"></div>
       <div class="plan-name">Moto</div>
       <div class="plan-price">
         <span class="price-currency">R$</span>
@@ -323,7 +325,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 4r
 
     <div class="plan-card featured">
       <div class="plan-badge">Mais popular</div>
-      <div class="plan-icon">🚗</div>
+      <div class="plan-icon"><img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=400&h=240&fit=crop&auto=format" alt="Carro"></div>
       <div class="plan-name">Carro</div>
       <div class="plan-price">
         <span class="price-currency">R$</span>
@@ -345,7 +347,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 4r
     </div>
 
     <div class="plan-card">
-      <div class="plan-icon">🚌</div>
+      <div class="plan-icon"><img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=400&h=240&fit=crop&auto=format" alt="Ônibus"></div>
       <div class="plan-name">Ônibus / Utilitários</div>
       <div class="plan-price">
         <span class="price-currency">R$</span>
@@ -367,7 +369,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 4r
     </div>
 
     <div class="plan-card">
-      <div class="plan-icon">🚛</div>
+      <div class="plan-icon"><img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=400&h=240&fit=crop&auto=format" alt="Caminhão"></div>
       <div class="plan-name">Caminhão</div>
       <div class="plan-price">
         <span class="price-currency">R$</span>
@@ -389,7 +391,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 4r
     </div>
 
     <div class="plan-card">
-      <div class="plan-icon">🚤</div>
+      <div class="plan-icon"><img src="https://images.unsplash.com/photo-1540946485063-a40da27545f8?w=400&h=240&fit=crop&auto=format" alt="Náutica e Máquinas"></div>
       <div class="plan-name">Náutica / Máquinas</div>
       <div class="plan-price">
         <span class="price-currency">R$</span>
@@ -411,7 +413,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 4r
     </div>
 
     <div class="plan-card">
-      <div class="plan-icon">📡</div>
+      <div class="plan-icon"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=240&fit=crop&auto=format" alt="Chip M2M"></div>
       <div class="plan-name">Chip M2M Algar</div>
       <div class="plan-price">
         <span class="price-value" style="font-size:2.4rem">29,90</span>
